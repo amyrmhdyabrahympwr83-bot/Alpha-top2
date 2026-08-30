@@ -1,0 +1,6 @@
+{
+  "name": "Alef Top",
+  "description": "پستچی و سرور پیام‌رسان الف تاپ - Lightweight local server panel and messenger with user search, live socket routing, and high-fidelity Material 3 design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
