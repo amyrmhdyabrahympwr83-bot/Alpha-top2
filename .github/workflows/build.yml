@@ -21,13 +21,13 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Generate Gradle Wrapper
-        run: gradle wrapper
+        run: gradle wrapper --gradle-version 8.7
 
       - name: Make gradlew executable
         run: chmod +x gradlew
 
       - name: Build APK
-        run: ./gradlew assembleDebug --no-daemon -Dorg.gradle.jvmargs="-Xmx2048m"
+        run: ./gradlew assembleDebug -Dkotlin.compiler.execution.strategy=in-process -Dorg.gradle.jvmargs="-Xmx3072m"
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
